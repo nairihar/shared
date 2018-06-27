@@ -1,0 +1,35 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "description": "Sharing data/buffer between node threads.",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov | npx coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nairihar/sblib.git"
+  },
+  "keywords": [
+    "share",
+    "buffer",
+    "threads",
+    "nodejs"
+  ],
+  "author": "Nairi Harutyunyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nairihar/sblib/issues"
+  },
+  "homepage": "https://github.com/nairihar/sblib#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
+  }
+}
