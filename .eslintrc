@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "rules": {
+    "guard-for-in": "off",
+    "no-restricted-syntax": "off",
+    "indent": ["error", 2]
+  },
+  "globals": {
+    "SharedArrayBuffer": true
+  }
+}
