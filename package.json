@@ -4,8 +4,10 @@
   "description": "Sharing data/buffer between node threads.",
   "main": "src/index.js",
   "scripts": {
-    "lint": "eslint src",
-    "test": "nyc mocha",
+    "lint_src": "eslint src/**",
+    "lint_test": "eslint test/**",
+    "lint_ex": "eslint examples/**",
+    "test": "nyc mocha && node --experimental-worker test/integration",
     "coverage": "nyc report --reporter=text-lcov | npx coveralls"
   },
   "repository": {
@@ -15,8 +17,11 @@
   "keywords": [
     "share",
     "buffer",
+    "worker",
+    "workers",
+    "thread",
     "threads",
-    "nodejs"
+    "worker_threads"
   ],
   "author": "Nairi Harutyunyan",
   "license": "MIT",
