@@ -1,1 +1,1 @@
-module.exports = require('./entities');
+module.exports = require('./shared');
